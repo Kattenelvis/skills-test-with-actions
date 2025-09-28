@@ -27,4 +27,4 @@ def get_nth_fibonacci(n):
         return b
 
 
-# Emil, check out if you can do a pull request with GitHub REST API 
+# Guy, check out if you can do a pull request with GitHub REST API 
