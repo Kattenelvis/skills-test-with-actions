@@ -1,0 +1,23 @@
+
+# Yum is the package manager btw
+# -y for answering yes on installation
+sudo yum install git -y
+
+# Cloning the frontend
+git clone https://github.com/Kattenelvis/flowback-frontend.git
+
+# Might not be needed, check if it is
+# Also might wanna specify version tbh for all of these packages
+sudo yum install nodejs
+
+# For Ubuntu for some weird reason
+curl -sL https://deb.nodesource.com/setup_24.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+sudo yum install docker
+
+sudo systemctl start docker
+
+cd flowback-frontend
+sudo docker build .
+
